@@ -64,11 +64,10 @@ let savjeeCoin = new Blockchain();
 savjeeCoin.addBlock(new Block(1, "10/07/2017", { amount: 4 }));
 savjeeCoin.addBlock(new Block(2, "12/07/2017", { amount: 10 }));
 
-console.log("Is blockchain valid? " + savjeeCoin.isChainValid());
+// console.log("Is blockchain valid? " + savjeeCoin.isChainValid());
+// savjeeCoin.chain[1].data = { amount: 100 };
+// savjeeCoin.chain[1].hash = savjeeCoin.chain[1].calculateHash(); 
+// console.log("Is blockchain valid? " + savjeeCoin.isChainValid());
 
-savjeeCoin.chain[1].data = { amount: 100 };
-savjeeCoin.chain[1].hash = savjeeCoin.chain[1].calculateHash();
-
-console.log("Is blockchain valid? " + savjeeCoin.isChainValid());
-
-// console.log(JSON.stringify(savjeeCoin, null, 4));
+console.log(JSON.stringify(savjeeCoin, null, 4));
+console.log("Is blockchain valid? " + savjeeCoin.isChainValid()); // Testing to see if it blockchain is vaild.
